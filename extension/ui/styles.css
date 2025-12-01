@@ -1,0 +1,15 @@
+body{margin:0;font-family:system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;background:#020617;color:#e5e7eb;min-width:320px;}
+.sf-header{padding:8px 10px;border-bottom:1px solid #111827;background:#020617;}
+.sf-header h1{margin:0;font-size:16px;}
+.sf-header p{margin:2px 0 0;font-size:11px;color:#9ca3af;}
+main{padding:8px 10px 10px;}
+.sf-actions{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:8px;}
+button{flex:1;min-width:120px;padding:6px 8px;font-size:12px;border-radius:6px;border:1px solid #1f2937;background:#020617;color:#e5e7eb;cursor:pointer;}
+button.primary{background:#2563eb;border-color:#1d4ed8;}
+button:hover{background:#0b1120;}
+h2{margin:8px 0 4px;font-size:12px;color:#9ca3af;}
+.sf-box{border:1px solid #111827;border-radius:6px;padding:6px;max-height:110px;overflow:auto;font-size:11px;background:#020617;}
+.mono{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,'Liberation Mono','Courier New',monospace;}
+label{display:flex;flex-direction:column;font-size:12px;margin-bottom:6px;gap:2px;}
+input,select{border-radius:6px;border:1px solid #111827;background:#020617;color:#e5e7eb;padding:4px 6px;font-size:12px;}
+.sf-note{font-size:11px;color:#9ca3af;margin:4px 0;}

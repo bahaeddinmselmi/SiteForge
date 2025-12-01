@@ -1,0 +1,17 @@
+<!doctype html><html><head><meta charset="utf-8"><title>SiteForge AI</title><link rel="stylesheet" href="styles.css"></head><body>
+<header class="sf-header"><h1>SiteForge</h1><p>Export websites as Next.js 14, WordPress themes, or multi-page apps (no AI required).</p></header>
+<main>
+<div class="sf-actions">
+<button id="btn-preview">Scrape Preview</button>
+<button id="btn-build" class="primary">Scrape &amp; Export (Next.js)</button>
+<button id="btn-wp-theme">Export as WordPress Theme</button>
+<button id="btn-multi-page">Scrape All Pages</button>
+<button id="btn-vercel">Deploy to Vercel</button>
+</div>
+<h2>Status</h2><div id="status" class="sf-box"></div>
+<h2>Error</h2><div id="error" class="sf-box" style="display:none;"></div>
+<h2>Snapshot Preview</h2><pre id="snapshot-preview" class="sf-box mono"></pre>
+<h2>Debug Output (on error)</h2><pre id="raw-output" class="sf-box mono"></pre>
+</main>
+<script src="../src/ui.js"></script><script src="popup.js"></script>
+</body></html>

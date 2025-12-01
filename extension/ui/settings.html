@@ -1,0 +1,26 @@
+<!doctype html><html><head><meta charset="utf-8"><title>SiteForge AI Settings</title><link rel="stylesheet" href="styles.css"></head><body>
+<header class="sf-header"><h1>SiteForge AI Settings</h1><p>Keys stored only in chrome.storage.local and sent directly to AI APIs.</p></header>
+<main>
+<form id="settings-form">
+<label>Provider<select id="provider"><option value="openai">OpenAI</option><option value="anthropic">Anthropic</option><option value="gemini">Gemini</option><option value="custom">Custom (OpenAI-compatible)</option></select></label>
+<label>OpenAI API key<input id="openaiKey" type="password" autocomplete="off"></label>
+<label>OpenAI model<input id="openaiModel" type="text" placeholder="gpt-4.1-mini"></label>
+<label>Anthropic API key<input id="anthropicKey" type="password" autocomplete="off"></label>
+<label>Anthropic model<input id="anthropicModel" type="text" placeholder="claude-3-5-sonnet-20240620"></label>
+<label>Max tokens (Anthropic)<input id="maxTokens" type="number" placeholder="4096"></label>
+<label>Gemini API key<input id="geminiKey" type="password" autocomplete="off" placeholder="AIza... or AI..."></label>
+<label>Gemini model<input id="geminiModel" type="text" placeholder="gemini-1.5-flash or gemini-1.5-flash-8b"></label>
+<label>Gemini endpoint (optional)<input id="geminiEndpoint" type="text" placeholder="https://generativelanguage.googleapis.com/v1beta/models"></label>
+<label>Custom endpoint (chat/completions URL)<input id="customEndpoint" type="text" placeholder="https://api.your-ai.com/v1/chat/completions"></label>
+<label>Custom API key<input id="customKey" type="password" autocomplete="off"></label>
+<label>Custom model<input id="customModel" type="text" placeholder="your-model-id"></label>
+<label>Custom auth header name (optional)<input id="customAuthHeaderName" type="text" placeholder="Authorization or X-API-Key"></label>
+<label>Custom auth header value prefix (before key, optional)<input id="customAuthHeaderValue" type="text" placeholder="Bearer "></label>
+<p class="sf-note">Custom providers should be OpenAI-compatible chat completion APIs. By default, the extension sends <code>Authorization: Bearer &lt;key&gt;</code>. You can override the header name and prefix here. Privacy: no keys are ever sent to any backend owned by SiteForge AI.</p>
+<button type="submit" class="primary">Save</button>
+</form>
+<h2>Status</h2><div id="status" class="sf-box"></div>
+<h2>Error</h2><div id="error" class="sf-box" style="display:none;"></div>
+</main>
+<script src="../src/ui.js"></script><script src="settings.js"></script>
+</body></html>

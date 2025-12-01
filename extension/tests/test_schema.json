@@ -1,0 +1,18 @@
+{
+  "project": {
+    "name": "Test Project",
+    "version": "1.0.0",
+    "packageManager": "npm",
+    "files": [
+      { "path": "package.json", "content": "{ \"name\": \"test\", \"version\": \"1.0.0\" }" },
+      { "path": "next.config.js", "content": "module.exports={};" },
+      { "path": "tailwind.config.cjs", "content": "module.exports={};" },
+      { "path": "postcss.config.cjs", "content": "module.exports={};" },
+      { "path": "app/page.jsx", "content": "export default function Page(){return <main>OK</main>;}" },
+      { "path": "README.md", "content": "# Test Project" }
+    ],
+    "assets": [
+      { "path": "public/images/test.png", "dataUri": "data:image/png;base64,AAAA" }
+    ]
+  }
+}

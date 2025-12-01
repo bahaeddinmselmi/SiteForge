@@ -1,0 +1,46 @@
+{
+  "manifest_version": 3,
+  "name": "SiteForge AI",
+  "description": "Reverse-engineer websites into Next.js 14 + Tailwind projects and download as a ZIP.",
+  "version": "0.1.0",
+  "action": {
+    "default_popup": "ui/popup.html",
+    "default_icon": {
+      "16": "icons/icon-16.png",
+      "48": "icons/icon-48.png",
+      "128": "icons/icon-128.png"
+    }
+  },
+  "options_page": "ui/settings.html",
+  "background": {
+    "service_worker": "src/background.js"
+  },
+  "permissions": [
+    "storage",
+    "activeTab",
+    "tabs",
+    "downloads"
+  ],
+  "host_permissions": [
+    "<all_urls>",
+    "https://api.openai.com/*",
+    "https://api.anthropic.com/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "<all_urls>"
+      ],
+      "js": [
+        "src/scraper.js",
+        "src/contentScript.js"
+      ],
+      "run_at": "document_idle"
+    }
+  ],
+  "icons": {
+    "16": "icons/icon-16.png",
+    "48": "icons/icon-48.png",
+    "128": "icons/icon-128.png"
+  }
+}
