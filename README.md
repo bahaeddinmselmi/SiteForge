@@ -4,7 +4,7 @@ SiteForge is a **client-side Chrome extension** that takes a live website and ex
 ready-to-run project **without using any AI**. It focuses on deterministic, "exact copy"
 reconstruction of the visual layout.
 
-<img width="128" height="128" alt="icon-128" src="https://github.com/user-attachments/assets/427e09e3-e6ac-4e37-8cfc-5199ea014b5c" />
+<img width="1024" height="1024" alt="Gemini_Generated_Image_exlfxuexlfxuexlf" src="https://github.com/user-attachments/assets/e3e9952a-3474-44ad-8fd9-ecc21d9aa6a2" />
 
 Current export targets:
 
